@@ -1,27 +1,21 @@
 # assignemnt-1
+Java program of swapping by referrence
+
           Program triangle 
-class Triangle
-{
-    int height;
-    int base;// base is also considered as side b
-    int side_a;
-    int side_c;
-
-    Triangle(int h, int b,int a,int c)
-    {
-        this.height = h;
-        this.base = b;
-        this.side_a = a;
-        this.side_c = c;
-    }
-
-    int getArea()
-    {
-        return (height * base)/2;
-    }
-
-    int getPerimeter()// to get perimeter we calculate the sum of all sides of a triangle
-    {
-        return side_a + base + side_c;
-    }
+import java.util.*;  
+class Swap_With {  
+    public static void main(String[] args) {  
+       int x, y, t;// x and y are to swap   
+       Scanner sc = new Scanner(System.in);  
+       System.out.println("Enter the value of X and Y");  
+       x = sc.nextInt();  
+       y = sc.nextInt();  
+       System.out.println("before swapping numbers: "+x +"  "+ y);  
+       /*swapping */  
+       t = x;  
+       x = y;  
+       y = t;  
+       System.out.println("After swapping: "+x +"   " + y);  
+       System.out.println( );  
+    }    
 }
